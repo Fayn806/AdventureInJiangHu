@@ -1,0 +1,216 @@
+﻿/* Created with Liquid Studio 2020 (https://www.liquid-technologies.com) */
+{
+    "enemy1": [
+        {
+            "name": "enemy1_01",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy1_02",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy1_03",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy1_04",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy1_05",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy1_06",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy1_07",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy1_08",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy1_09",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy1_10",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        }
+    ],
+    "enemy2": [
+        {
+            "name": "enemy2_01",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy2_02",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy2_03",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy2_04",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy2_05",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy2_06",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy2_07",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy2_08",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy2_09",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy2_10",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        }
+    ],
+    "enemy3": [
+        {
+            "name": "enemy3_01",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy3_02",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        },
+        {
+            "name": "enemy3_03",
+            "maxWound1": "60",
+            "maxWound2": "80",
+            "actions": [
+                "attack_1_5",
+                "attack_2_10"
+            ]
+        }
+    ]
+}
