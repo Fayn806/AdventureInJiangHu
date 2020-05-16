@@ -941,6 +941,8 @@ MonoBehaviour:
   wealth1Text: {fileID: 1023471964}
   wealth2Text: {fileID: 573388786}
   paikuText: {fileID: 915078281}
+  power1Btn: {fileID: 1252801002}
+  power2Btn: {fileID: 519138841}
   backBtn: {fileID: 1646940515}
 --- !u!114 &453980848
 MonoBehaviour:

@@ -3,8 +3,8 @@
     "enemy1": [
         {
             "name": "enemy1_01",
-            "maxWound1": "60",
-            "maxWound2": "80",
+            "maxWound1": "300",
+            "maxWound2": "400",
             "actions": [
                 "attack_1_5",
                 "attack_2_10"
@@ -12,8 +12,8 @@
         },
         {
             "name": "enemy1_02",
-            "maxWound1": "60",
-            "maxWound2": "80",
+            "maxWound1": "400",
+            "maxWound2": "200",
             "actions": [
                 "attack_1_5",
                 "attack_2_10"
@@ -21,8 +21,8 @@
         },
         {
             "name": "enemy1_03",
-            "maxWound1": "60",
-            "maxWound2": "80",
+            "maxWound1": "300",
+            "maxWound2": "500",
             "actions": [
                 "attack_1_5",
                 "attack_2_10"
@@ -30,8 +30,8 @@
         },
         {
             "name": "enemy1_04",
-            "maxWound1": "60",
-            "maxWound2": "80",
+            "maxWound1": "400",
+            "maxWound2": "400",
             "actions": [
                 "attack_1_5",
                 "attack_2_10"
@@ -39,8 +39,8 @@
         },
         {
             "name": "enemy1_05",
-            "maxWound1": "60",
-            "maxWound2": "80",
+            "maxWound1": "500",
+            "maxWound2": "400",
             "actions": [
                 "attack_1_5",
                 "attack_2_10"
@@ -48,8 +48,8 @@
         },
         {
             "name": "enemy1_06",
-            "maxWound1": "60",
-            "maxWound2": "80",
+            "maxWound1": "600",
+            "maxWound2": "300",
             "actions": [
                 "attack_1_5",
                 "attack_2_10"
@@ -57,8 +57,8 @@
         },
         {
             "name": "enemy1_07",
-            "maxWound1": "60",
-            "maxWound2": "80",
+            "maxWound1": "400",
+            "maxWound2": "700",
             "actions": [
                 "attack_1_5",
                 "attack_2_10"
@@ -66,8 +66,8 @@
         },
         {
             "name": "enemy1_08",
-            "maxWound1": "60",
-            "maxWound2": "80",
+            "maxWound1": "600",
+            "maxWound2": "600",
             "actions": [
                 "attack_1_5",
                 "attack_2_10"
@@ -75,8 +75,8 @@
         },
         {
             "name": "enemy1_09",
-            "maxWound1": "60",
-            "maxWound2": "80",
+            "maxWound1": "500",
+            "maxWound2": "800",
             "actions": [
                 "attack_1_5",
                 "attack_2_10"
@@ -84,8 +84,8 @@
         },
         {
             "name": "enemy1_10",
-            "maxWound1": "60",
-            "maxWound2": "80",
+            "maxWound1": "700",
+            "maxWound2": "600",
             "actions": [
                 "attack_1_5",
                 "attack_2_10"
@@ -95,8 +95,8 @@
     "enemy2": [
         {
             "name": "enemy2_01",
-            "maxWound1": "60",
-            "maxWound2": "80",
+            "maxWound1": "400",
+            "maxWound2": "400",
             "actions": [
                 "attack_1_5",
                 "attack_2_10"
@@ -104,8 +104,8 @@
         },
         {
             "name": "enemy2_02",
-            "maxWound1": "60",
-            "maxWound2": "80",
+            "maxWound1": "600",
+            "maxWound2": "600",
             "actions": [
                 "attack_1_5",
                 "attack_2_10"
@@ -113,8 +113,8 @@
         },
         {
             "name": "enemy2_03",
-            "maxWound1": "60",
-            "maxWound2": "80",
+            "maxWound1": "800",
+            "maxWound2": "800",
             "actions": [
                 "attack_1_5",
                 "attack_2_10"
@@ -122,8 +122,8 @@
         },
         {
             "name": "enemy2_04",
-            "maxWound1": "60",
-            "maxWound2": "80",
+            "maxWound1": "1000",
+            "maxWound2": "1000",
             "actions": [
                 "attack_1_5",
                 "attack_2_10"
@@ -187,8 +187,8 @@
     "enemy3": [
         {
             "name": "enemy3_01",
-            "maxWound1": "60",
-            "maxWound2": "80",
+            "maxWound1": "1000",
+            "maxWound2": "1000",
             "actions": [
                 "attack_1_5",
                 "attack_2_10"
@@ -196,8 +196,8 @@
         },
         {
             "name": "enemy3_02",
-            "maxWound1": "60",
-            "maxWound2": "80",
+            "maxWound1": "1200",
+            "maxWound2": "1200",
             "actions": [
                 "attack_1_5",
                 "attack_2_10"
@@ -205,8 +205,8 @@
         },
         {
             "name": "enemy3_03",
-            "maxWound1": "60",
-            "maxWound2": "80",
+            "maxWound1": "1500",
+            "maxWound2": "1500",
             "actions": [
                 "attack_1_5",
                 "attack_2_10"

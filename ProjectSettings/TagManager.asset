@@ -21,6 +21,9 @@ TagManager:
   - BattleScene
   - BattleReward
   - BattleCanvas
+  - BuffPanel
+  - MenuCanvas
+  - Items
   layers:
   - Default
   - TransparentFX

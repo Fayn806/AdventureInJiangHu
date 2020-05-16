@@ -28,6 +28,7 @@ public class GameManage : MonoBehaviour
     {
         //startScene = GameObject.FindGameObjectWithTag("StartScene");
         //characterScene = GameObject.FindGameObjectWithTag("CharacterScene");
+
     }
 
     private void Awake()
@@ -54,6 +55,7 @@ public class GameManage : MonoBehaviour
 
     public static void GameCG()
     {
+        
         startScene = GameObject.FindGameObjectWithTag("StartScene");
         characterScene = GameObject.FindGameObjectWithTag("CharacterScene");
         //UI控制
@@ -80,6 +82,12 @@ public class GameManage : MonoBehaviour
 
     public static void GameReady()
     {
+        if (SceneManager.GetActiveScene().name != "StartScene")
+        {
+            SceneManager.LoadScene("StartScene");
+            SceneManager.sceneLoaded += SceneManager_sceneLoaded;
+            return;
+        }
         //UI控制
         GameObject menuCanvas = startScene.transformFindObj("MenuCanvas");
 
@@ -101,8 +109,41 @@ public class GameManage : MonoBehaviour
 
     }
 
+    private static void SceneManager_sceneLoaded(Scene arg0, LoadSceneMode arg1)
+    {
+
+        if (SceneManager.GetActiveScene().name != "StartScene")
+        { 
+            return;
+        }
+
+        startScene = GameObject.FindGameObjectWithTag("StartScene");
+        characterScene = GameObject.FindGameObjectWithTag("CharacterScene");
+        ////UI控制
+        //GameObject startCGVideoPlayer = startScene.transformFindObj("StartCGVideoPlayer");
+        //startCGVideoPlayer.GetComponent<VideoPlayer>().Play();
+
+        GameObject loadingCanvas = startScene.transformFindObj("LoadingCanvas");
+        GameObject menuCanvas = startScene.transformFindObj("MenuCanvas");
+        loadingCanvas.SetActive(false);
+        menuCanvas.SetActive(true);
+
+        GameObject clickToStartGameText = menuCanvas.transformFindObj("ClickToStartGameText");
+        GameObject clickToSkipCGText = menuCanvas.transformFindObj("ClickToSkipCGText");
+        clickToStartGameText.SetActive(false);
+
+        GameObject logoImg = menuCanvas.transformFindObj("LogoImg");
+        GameObject sceneBgImg = menuCanvas.transformFindObj("SceneBgImg");
+        logoImg.SetActive(false);
+        sceneBgImg.SetActive(false);
+
+        GameObject menuButtons = menuCanvas.transformFindObj("MenuButtons");
+        menuButtons.SetActive(false);
+    }
+
     public static void GameMenuShow()
     {
+        
         //UI控制
         GameObject menuCanvas = startScene.transformFindObj("MenuCanvas");
         menuCanvas.SetActive(true);
@@ -140,7 +181,6 @@ public class GameManage : MonoBehaviour
     private static void GameManage_loopPointReached(VideoPlayer source)
     {
         SceneManager.LoadSceneAsync("CharacterScene");
-        
     }
 
     public static void GameSelectCharacter(int index)
@@ -200,8 +240,15 @@ public class GameManage : MonoBehaviour
                 PlayerController.allCards[39]
             };
         }
+        PlayerController.eventManager = null;
+        PlayerController.map = null;
+
+        PlayerController.posInTilemap = new Vector3(-2, 0, 0);
+        PlayerController.posReal = new Vector3(-2, (float)0.5, 0);
+        PlayerController.posCur = new Vector3(-2, (float)0.5, 0);
 
         GameManage.GetEnemyInfo();
+        GameManage.GetItemInfo();
         SceneManager.LoadSceneAsync("MapScene");
     }
 
@@ -222,6 +269,10 @@ public class GameManage : MonoBehaviour
         else if (PlayerController.curEventType == 5)
         {
             GameManage.GameSurpriseEnter();
+        }
+        else if (PlayerController.curEventType == 2)
+        {
+            GameManage.GameBattleEnter();
         }
     }
     public static void GameEventFinish()
@@ -263,7 +314,8 @@ public class GameManage : MonoBehaviour
 
     public static void GameLoad()
     {
-        
+        PlayerController.Load();
+        SceneManager.LoadScene("MapScene");
     }
 
     public static void GameSetUp()
@@ -306,14 +358,16 @@ public class GameManage : MonoBehaviour
                 path += "/NCard.json";
                 break;
         }
+
+        path = Application.streamingAssetsPath + "/SCard.json";
         StreamReader streamreader = new StreamReader(path);//读取数据，转换成数据流
         JsonReader js = new JsonReader(streamreader);//再转换成json数据
-        PlayerController.card = JsonMapper.ToObject<Card>(js);//读取
+        Card card = JsonMapper.ToObject<Card>(js);//读取
 
         PlayerController.allCards.Clear();
-        for (int i = 0; i < PlayerController.card.cardList.Count; i++)
+        for (int i = 0; i < card.cardList.Count; i++)
         {
-            PlayerController.allCards.Add(PlayerController.card.cardList[i]);
+            PlayerController.allCards.Add(card.cardList[i]);
         }
     }
 
@@ -324,8 +378,16 @@ public class GameManage : MonoBehaviour
         StreamReader streamreader = new StreamReader(path);//读取数据，转换成数据流
         JsonReader js = new JsonReader(streamreader);//再转换成json数据
         PlayerController.enemy = JsonMapper.ToObject<Enemy>(js);//读取
-
-        Debug.Log(Application.dataPath);
         
+    }
+
+    public static void GetItemInfo()//这个方法给按钮注册
+    {
+        string path = Application.streamingAssetsPath + "/Item.json";
+
+        StreamReader streamreader = new StreamReader(path);//读取数据，转换成数据流
+        JsonReader js = new JsonReader(streamreader);//再转换成json数据
+        PlayerController.item = JsonMapper.ToObject<Item>(js);//读取
+
     }
 }

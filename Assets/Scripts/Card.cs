@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-
+[System.Serializable]
 public class CardListItem : MonoBehaviour
 {
     /// <summary>
@@ -57,12 +57,29 @@ public class CardListItem : MonoBehaviour
     }
 }
 
-public class Card
+public class Card : ScriptableObject
 {
     /// <summary>
     /// 
     /// </summary>
     public List<CardListItem> cardList { get; set; }
+    public List<CardListItem> allCards { get; set; }
+    /// <summary>
+    /// 当前牌组
+    /// </summary>
+    public List<CardListItem> curCards { get; set; }
+    /// <summary>
+    /// 抽牌组
+    /// </summary>
+    public List<CardListItem> drawingCards { get; set; }
+    /// <summary>
+    /// 弃牌组
+    /// </summary>
+    public List<CardListItem> threwCards { get; set; }
+    /// <summary>
+    /// 手牌
+    /// </summary>
+    public List<CardListItem> handCards { get; set; }
 }
 
 
